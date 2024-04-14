@@ -1,0 +1,163 @@
+
+body {
+   background-image: url('image/task.jpeg');
+  background-size: cover;  
+   background-position: center;
+  background-repeat: no-repeat; 
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+    height: 100vh; 
+}
+
+h1 {
+  text-align: center;  
+  margin-top: 0;
+}
+
+.container {
+  width: 100%;
+  height: 245px;
+  
+  display: flex;  
+}
+
+.add_data {
+  width: 60%;
+  height: 200px;
+  border: solid;
+  border-radius: 20px;
+  position: relative;
+  align-items: center;
+  background-color: rgb(248, 251, 250);
+  padding: 20px; /* Add padding to create space between the content and the border */
+}
+
+.form {
+  /* Additional styles for the form */
+  margin-bottom: 20px; /* Add margin at the bottom to separate form elements */
+}
+
+label {
+  /* Styles for labels */
+  font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"] {
+  /* Styles for text inputs */
+  width: 60%; /* Make text inputs fill the entire width of the container */
+  margin-bottom: 10px; /* Add margin at the bottom of each input */
+  padding: 8px; /* Add padding for better appearance */
+  /* box-sizing: border-box; */
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  align-content: center;
+}
+
+.ab {
+ 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+}
+
+button:hover {
+  background-color: #070707; 
+  color: #fcfafa;
+}
+
+.timer {
+  width: 800px;
+  position: relative;
+  background-color: rgb(248, 251, 250);
+  height: 245px;
+  border: solid;
+  border-radius: 100px;
+  margin-left: 20px; /* Add some space between the two divs */
+}
+h2{
+  text-align: center; /* Aligns the text horizontally */
+  margin-top: 0;
+}
+#timerDisplay{
+  text-align: center;
+}
+.t{
+  
+  width: 40%;
+  height: 120px;
+ 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  right: 200px;
+  
+}
+.btn{
+  margin: 5px;
+  border: solid;
+  border-radius: 40px;
+  border-style: double;
+
+}
+.btn:hover{
+  color: #fcfafa;
+  border-color: white;
+  border: solid;
+}
+
+
+th {
+  color: white;
+  background-color: rgb(21, 21, 31);
+}
+
+.eve {
+  background-color: rgb(26, 158, 158);
+  text-align: center;
+}
+
+.odd {
+  background-color: rgb(200, 205, 208);
+  text-align: center;
+}
+
+#dataTable {
+  border: solid;
+  width: 40%;
+  position: absolute;
+  top: 300px;
+  right: 500px;
+
+}
+.table_filter{
+  position: relative;
+  
+}
+#filterForm{
+  position: absolute;
+  top:50px;
+  right: 600px;
+  background-color: rgb(248, 251, 250);
+  border: solid;
+  border-radius: 20px;
+  padding: 60px;
+  text-align: center;
+  box-shadow: 48px 48px 24px 1px rgba(128,110,110,0.93);
+}
+.fil{
+  position: absolute;
+  top: 90px;
+  left: 180px;
+  box-shadow: 48px 48px 24px 1px rgba(128,110,110,0.93);}
+.fil:hover{
+  color: #fcfafa;
+}

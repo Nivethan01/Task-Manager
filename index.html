@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Task Manager</h1>
+  <div class="container">
+    <div class="add_data">
+      <form class="form">
+        <label>Task</label>
+        <input id="task" class="add_item" type="text" placeholder="Task"/><br>
+        <label>Description</label>
+        <input id="dec" class="add_item" type="text" placeholder="Description"/><br>
+        <label for="duration">Duration</label>
+        <input id="dur" class="add_item"  type="text" pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}" placeholder="HH:MM:SS"/><br>
+      </form>
+      <button type="button" id="cl" class="ab">ADD TASK</button>
+    </div>
+    <div class="timer">
+      <h2>Timer</h2>
+      <p id="timerDisplay">00:00:00</p>
+      <div class="t">
+        <button type="button" id="startTimer" class="btn">Start</button>
+        <button id="stopTimer" class="btn">Stop</button>
+        <button id="resetTimer" class="btn">Reset</button>
+      </div>
+    </div>
+  </div>
+  <div class="table_filter"> 
+    <form id="filterForm">
+      <label for="taskFilter">Filter by Task:</label>
+      <select id="taskFilter" >
+        <option value="">All Tasks</option>
+      </select>
+      <button type="submit" class="fil" id="filterButton">Filter</button>
+    </form>
+    <table id="dataTable">
+      <tr>
+        <th>S_No</th>
+        <th>Task</th>
+        <th>Description</th>
+        <th>Duration</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </table>    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
